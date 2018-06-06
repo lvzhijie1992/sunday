@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LzjTableViewCell" customModule="sunday" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aSN-ih-sWi">
+                        <rect key="frame" x="10" y="5" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.93589770790000004" green="0.37451055649999998" blue="0.21705824139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="FIx-l9-fNh"/>
+                            <constraint firstAttribute="height" constant="40" id="mKf-id-Of8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwj-8R-Wni">
+                        <rect key="frame" x="58" y="5" width="253" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hwj-8R-Wni" secondAttribute="bottom" constant="4.5" id="CsC-E2-0mK"/>
+                    <constraint firstItem="aSN-ih-sWi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="EH7-MU-BBx"/>
+                    <constraint firstItem="hwj-8R-Wni" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ghN-DA-jac"/>
+                    <constraint firstItem="hwj-8R-Wni" firstAttribute="leading" secondItem="aSN-ih-sWi" secondAttribute="trailing" constant="8" id="nwm-Oi-YTP"/>
+                    <constraint firstAttribute="trailing" secondItem="hwj-8R-Wni" secondAttribute="trailing" constant="9" id="sTx-Qc-8do"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="aSN-ih-sWi" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="ENf-zP-DBX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lzjimg" destination="aSN-ih-sWi" id="XsS-By-I0G"/>
+                <outlet property="title" destination="hwj-8R-Wni" id="cLJ-kG-50a"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
